@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link href="../../dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 w-full max-w-lg">
+      <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">
+        Checkout
+      </h2>
+
+      <form>
+        <div class="mb-4">
+          <label class="block text-gray-700 font-semibold mb-2" for="name">
+            Full Name
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-300"
+            id="name"
+            type="text"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-gray-700 font-semibold mb-2" for="address">
+            Address
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-300"
+            id="address"
+            type="text"
+            placeholder="123 Main St, City"
+            required
+          />
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-gray-700 font-semibold mb-2" for="phone">
+            Phone Number
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-300"
+            id="phone"
+            type="tel"
+            placeholder="+1 234 567 8900"
+            required
+          />
+        </div>
+
+        <div class="mb-6">
+          <label class="block text-gray-700 font-semibold mb-2" for="payment">
+            Payment Method
+          </label>
+          <select
+            class="shadow border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:ring focus:border-blue-300"
+            id="payment"
+            required
+          >
+            <option value="">Select a payment method</option>
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="cash">Cash on Delivery</option>
+          </select>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <button
+            id="place-order-btn"
+            class="bg-primary cursor-pointer hover:bg-black duration-300 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring"
+          >
+            Place Order
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="../js/checkOut.js"></script>
+  </body>
+</html>
